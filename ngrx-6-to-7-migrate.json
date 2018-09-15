@@ -1,0 +1,9 @@
+{
+  "rulesDirectory": ["."],
+  "defaultSeverity": "warning",
+  "rules": {
+    "ngrx-store-operators": true,
+    "ngrx-effects-operators": true,
+    "ngrx-chained-pipes": true
+  }
+}

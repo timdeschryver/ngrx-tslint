@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "downlevelIteration": true,
+    "lib": ["es6", "es2015", "dom"],
+    "noLib": false,
+    "outDir": "./dist",
+    "typeRoots": ["./node_modules/@types", "./node_modules"],
+    "types": ["node", "sprintf-js"]
+  },
+  "files": ["src/ngrx-6-to-7-migrate.ts", "src/index.ts"]
+}
