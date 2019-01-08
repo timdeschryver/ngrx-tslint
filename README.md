@@ -54,6 +54,18 @@ this.store.pipe(select(...), map(...))
 
 ## Usage
 
+Automatically run the migration:
+
+```bash
+npx ngrx-tslint-oftype
+```
+
+Or install the package, add the following rules to the `tslint.confg` and run TSLint on the project.
+
+```bash
+npm install ngrx-tslint-oftype --save-dev
+```
+
 ```json
 {
   "rulesDirectory": ["node_modules/ngrx-tslint-oftype"],
@@ -62,6 +74,10 @@ this.store.pipe(select(...), map(...))
     "ngrx-chained-pipes": true
   }
 }
+```
+
+```bash
+./node_modules/.bin/tslint -c tslint.json -p src/tsconfig.app.json --fix
 ```
 
 ## License
