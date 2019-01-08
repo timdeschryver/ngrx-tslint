@@ -5,28 +5,15 @@ Heavily based on [ReactiveX/rxjs-tslint](https://github.com/ReactiveX/rxjs-tslin
 
 ## Table of Contents
 
-- [Rules](#rules)
-  - [ngrx-store-operators](#ngrx-store-operators)
-  - [ngrx-effects-operators](#ngrx-effects-operators)
-  - [ngrx-chained-pipes](#ngrx-chained-pipes)
-- [Usage](#usage)
-- [LICENSE](#license)
+- [NgRx TSLint](#ngrx-tslint)
+  - [Table of Contents](#table-of-contents)
+  - [Rules](#rules)
+    - [ngrx-effects-operators](#ngrx-effects-operators)
+    - [ngrx-chained-pipes](#ngrx-chained-pipes)
+  - [Usage](#usage)
+  - [License](#license)
 
 ## Rules
-
-### ngrx-store-operators
-
-Migrates the `select` function to its pipeable equivalent.
-
-```ts
-BEFORE: import { Store } from '@ngrx/store';
-
-this.animals = this.store.select(getWildAnimals);
-
-AFTER: import { Store, select } from '@ngrx/store';
-
-this.animals = this.store.pipe(select(getWildAnimals));
-```
 
 ### ngrx-effects-operators
 
@@ -69,9 +56,8 @@ this.store.pipe(select(...), map(...))
 
 ```json
 {
-  "rulesDirectory": ["node_modules/ngrx-tslint"],
+  "rulesDirectory": ["node_modules/ngrx-tslint-oftype"],
   "rules": {
-    "ngrx-store-operators": true,
     "ngrx-effects-operators": true,
     "ngrx-chained-pipes": true
   }

@@ -1,5 +1,5 @@
 {
-  "name": "ngrx-tslint",
+  "name": "ngrx-tslint-oftype",
   "version": "0.0.1",
   "description": "TSLint rule for NgRX",
   "main": "index.js",
